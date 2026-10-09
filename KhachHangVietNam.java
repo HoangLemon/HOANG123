@@ -24,6 +24,7 @@ class KhachHangVietNam extends KhachHang{
 	public void setDinhMuc(double dinhMuc) {
 		this.dinhMuc = dinhMuc;
 	}
+	@Override
 	public double getThanhTien() {
 		if(soKW <= dinhMuc)
 		{
@@ -39,7 +40,7 @@ class KhachHangVietNam extends KhachHang{
 	public String toString() {
 		return "KhachHangVietNam [doiTuong=" + doiTuong + ", dinhMuc=" + dinhMuc + ", maKhachHang=" + maKhachHang
 				+ ", hoTen=" + hoTen + ", ngayLapHoaDon=" + ngayLapHoaDon + ", soKW=" + soKW + ", donGia=" + donGia
-				+ ", thanhTien=" + thanhTien + "]";
+				+ ", thanhTien=" + getThanhTien() + "]";
 	}
 
 }

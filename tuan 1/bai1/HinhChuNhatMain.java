@@ -1,10 +1,10 @@
 package HinhHoc;
 
-public class HinhTronMain {
+public class HinhChuNhatMain {
     public static void main(String[] args) {
-        HinhTron h1 = new HinhTron(new ToaDo("O", 4, 10), 7);
-        System.out.println("Thong tin hinh tron:");
-        System.out.println("Hinh tron: " + h1.getTam().getTen());
-        System.out.println("Hinh tron co ban kinh: " + h1.getBanKinh());
+        HinhChuNhat h1 = new HinhChuNhat(3, 6);
+        System.out.println("Chieu dai hinh chu nhat: " + h1.getChieuDai());
+        System.out.println("Chieu rong hinh chu nhat: " + h1.getChieuRong());
+        System.out.println("Dien tich hcn: " + h1.getDT());
     }
 }
